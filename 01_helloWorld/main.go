@@ -2,6 +2,11 @@ package main
 
 import "fmt"
 
+var a int
+
 func main() {
-	fmt.Println("Hello World!")
+	s := "Hello World!"
+	s = "Goodbye cruel World!"
+	
+	fmt.Println("s - ", s)
 }
