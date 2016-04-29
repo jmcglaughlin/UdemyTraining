@@ -2,11 +2,10 @@ package main
 
 import "fmt"
 
-var a int
+var hello = "Hello, 世界"
 
 func main() {
-	s := "Hello World!"
-	s = "Goodbye cruel World!"
-	
-	fmt.Println("s - ", s)
+
+	fmt.Printf("%T: %v\n", "Hello, 世界", "Hello, 世界")
+	fmt.Printf("%T: %v\n", hello, hello)
 }
