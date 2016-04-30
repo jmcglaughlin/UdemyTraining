@@ -4,12 +4,18 @@ import "fmt"
 
 
 func main() {
-    div2 := func (i int) (int, bool) {
-        return i /2, i % 2 == 0
+    
+    greatest := func (numbers ...int) (int) {
+        var largest int
+        for _, v := range numbers {
+            if v > largest {
+                largest = v
+            }
+        }
+        return largest
     }
     
-    for n:=1; n <= 10 ;n++ {
-        fmt.Print(n, " ")
-        fmt.Println(div2(n))
-    }
+    max := greatest(1,2,315,4,5)
+
+    fmt.Println(max)
 }
