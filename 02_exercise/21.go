@@ -18,4 +18,6 @@ func main() {
     max := greatest(1,2,315,4,5)
 
     fmt.Println(max)
+    
+    fmt.Println((true && false) || (false && true) || !(false && false))
 }
