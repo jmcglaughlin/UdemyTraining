@@ -7,7 +7,7 @@ func main() {
 	thisFib := 1
 	f := 0
 
-	for lastFib := 0; lastFib < 4000001; lastFib = f {
+	for lastFib := 0; lastFib <= 4000000; lastFib = f {
 		f = thisFib
 		thisFib += lastFib
 
